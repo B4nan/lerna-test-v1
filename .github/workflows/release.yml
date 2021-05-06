@@ -89,4 +89,9 @@ jobs:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
             -   name: Release
-                run: npm run release
+                run: |
+                    echo "access=public" >> .npmrc
+                    echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+                    npm run release --yes --no-verify-access
+                env:
+                    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

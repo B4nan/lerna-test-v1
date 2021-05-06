@@ -12,7 +12,7 @@ export const ACT_SOURCE_TYPES = {
     SOURCE_FILES: 'SOURCE_FILES',
     GIT_REPO: 'GIT_REPO',
     TARBALL: 'TARBALL',
-    GITHUB_GIST: 'GITHUB_GIST',
+    // GITHUB_GIST: 'GITHUB_GIST',
 };
 
 export const ACTOR_EVENT_NAMES = {

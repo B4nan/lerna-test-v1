@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.5 (2021-05-06)
+
+
+### Bug Fixes
+
+* make another small change in consts ([c8cfbac](https://github.com/apify/apify-shared-js/commit/c8cfbac386a67578f75255fd6f14b7f6bfc7ee52))
+
+
+
+
+
 ## 1.0.4 (2021-05-06)
 
 **Note:** Version bump only for package @lerna-test-v1/input_schema

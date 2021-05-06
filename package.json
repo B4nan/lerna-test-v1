@@ -36,7 +36,9 @@
         "build": "lerna run build",
         "test": "jest --silent",
         "test-cov": "jest --coverage",
-        "prepublishOnly": "(test $CI || (echo \"Publishing is reserved to CI!\"; exit 1))",
+        "release": "npm run build && lerna publish from-package --contents dist --force-publish",
+        "publish:next": "lerna publish --canary --preid dev --dist-tag next --force-publish",
+        "release:next": "npm run build && npm run publish:next",
         "lint": "eslint packages/*/src test",
         "lint:fix": "eslint packages/*/src test --fix"
     },

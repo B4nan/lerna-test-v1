@@ -92,6 +92,9 @@ jobs:
                 run: |
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-                    npm run build && npx lerna version patch && npx lerna publish from-package --contents dist --yes --no-verify-access
+                    npm install
+                    npm run build
+                    npx lerna version patch
+                    npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:
                     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

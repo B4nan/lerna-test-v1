@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.6 (2021-05-06)
+
+
+### Bug Fixes
+
+* try it again ([2ffa0ee](https://github.com/apify/apify-shared-js/commit/2ffa0ee14d6e89ea0184d08c7fd58791fc192d9a))
+
+
+
+
+
 ## 1.0.5 (2021-05-06)
 
 

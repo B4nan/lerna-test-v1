@@ -78,6 +78,10 @@ jobs:
         needs: [ test, build, lint ]
         runs-on: ubuntu-latest
         steps:
+            -   name: Configure git credentials
+                uses: OleksiyRudenko/gha-git-credentials@v1
+                with:
+                    token: ${{ secrets.GH_TOKEN }}
             -   uses: actions/checkout@v2
             -   uses: actions/setup-node@v1
                 with:
@@ -97,4 +101,6 @@ jobs:
                     npx lerna version patch
                     npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:
+                    NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+                    GH_TOKEN: ${{secrets.GH_TOKEN}}
                     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -79,6 +79,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   uses: actions/checkout@v2
+                with:
+                    token: ${{ secrets.GH_TOKEN }}
             -   uses: actions/setup-node@v1
                 with:
                     node-version: 16
@@ -88,12 +90,10 @@ jobs:
                 with:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
-            -   name: Configure git credentials
-                uses: OleksiyRudenko/gha-git-credentials@v1
-                with:
-                    token: ${{ secrets.GH_TOKEN }}
             -   name: Release
                 run: |
+                    git config --global user.name 'Apify Release Bot'
+                    git config --global user.email 'noreply@apify.com'
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
                     npm install
@@ -102,5 +102,6 @@ jobs:
                     npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:
                     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+                    GIT_USER: "noreply@apify.com:${{ secrets.GH_TOKEN }}"
                     GH_TOKEN: ${{secrets.GH_TOKEN}}
                     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

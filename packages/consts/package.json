@@ -1,5 +1,5 @@
 {
-    "name": "@apify/consts",
+    "name": "@lerna-test-v1/consts",
     "version": "1.0.0",
     "description": "Tools and constants shared across Apify projects.",
     "main": "dist/index.js",

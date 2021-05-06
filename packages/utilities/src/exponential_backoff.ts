@@ -1,4 +1,4 @@
-import log, { Exception } from '@apify/log';
+import log, { Exception } from '@lerna-test-v1/log';
 import { delayPromise } from './utilities';
 
 export class RetryableError extends Error {

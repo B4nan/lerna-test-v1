@@ -1,5 +1,5 @@
 {
-    "name": "apify-shared",
+    "name": "lerna-test-v1",
     "private": true,
     "version": "0.7.7",
     "description": "Tools and constants shared across Apify projects.",
@@ -51,7 +51,7 @@
             "<rootDir>/packages/*/src/**/*.ts"
         ],
         "moduleNameMapper": {
-            "@apify/(.*)": "<rootDir>/packages/$1/src"
+            "@lerna-test-v1/(.*)": "<rootDir>/packages/$1/src"
         },
         "modulePathIgnorePatterns": [
             "dist/package.json",

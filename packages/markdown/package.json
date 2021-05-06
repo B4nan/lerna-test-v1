@@ -1,5 +1,5 @@
 {
-    "name": "@apify/markdown",
+    "name": "@lerna-test-v1/markdown",
     "version": "1.0.0",
     "description": "Tools and constants shared across Apify projects.",
     "main": "dist/index.js",
@@ -43,8 +43,8 @@
         "access": "public"
     },
     "dependencies": {
-        "@apify/consts": "^1.0.0",
-        "@apify/utilities": "^1.0.0",
+        "@lerna-test-v1/consts": "^1.0.0",
+        "@lerna-test-v1/utilities": "^1.0.0",
         "git-url-parse": "^11.4.4",
         "marked": "^2.0.0",
         "match-all": "^1.2.6"

@@ -1,5 +1,5 @@
 {
-    "name": "@apify/log",
+    "name": "@lerna-test-v1/log",
     "version": "1.0.0",
     "description": "Tools and constants shared across Apify projects.",
     "main": "dist/index.js",
@@ -43,7 +43,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@apify/consts": "^1.0.0",
+        "@lerna-test-v1/consts": "^1.0.0",
         "chalk": "^4.0.0"
     }
 }

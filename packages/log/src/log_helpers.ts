@@ -1,4 +1,4 @@
-import { ENV_VARS } from '@apify/consts';
+import { ENV_VARS } from '@lerna-test-v1/consts';
 import { LogLevel } from './log_consts';
 
 /**

@@ -1,6 +1,6 @@
 import gitUrlParse from 'git-url-parse';
-import { CONTACT_LINK_REGEX, GIT_MAIN_BRANCH } from '@apify/consts';
-import { isUrlRelative } from '@apify/utilities';
+import { CONTACT_LINK_REGEX, GIT_MAIN_BRANCH } from '@lerna-test-v1/consts';
+import { isUrlRelative } from '@lerna-test-v1/utilities';
 
 export function formatHeadingId(headingId: string) {
     // Replace non-word characters with dashes

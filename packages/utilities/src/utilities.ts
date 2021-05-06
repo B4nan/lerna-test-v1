@@ -9,8 +9,8 @@
 
 import crypto from 'crypto';
 import request, { CoreOptions, Response } from 'request';
-import log, { Logger, LoggerJson, LogLevel } from '@apify/log';
-import { ANONYMOUS_USERNAME } from '@apify/consts';
+import log, { Logger, LoggerJson, LogLevel } from '@lerna-test-v1/log';
+import { ANONYMOUS_USERNAME } from '@lerna-test-v1/consts';
 
 // due to invalid typings inside the library we need to use good old require here
 // eslint-disable-next-line @typescript-eslint/no-var-requires

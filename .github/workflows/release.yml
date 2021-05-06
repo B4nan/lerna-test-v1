@@ -7,8 +7,8 @@ on:
 
 jobs:
     # NPM install is done in a separate job and cached to speed up the following jobs.
-    build_and_test:
-        name: Build & Test
+    test:
+        name: Test
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
         runs-on: ubuntu-latest
 
@@ -75,7 +75,7 @@ jobs:
     # and triggering of docker image builds in the apify-actor-docker repo.
     deploy:
         name: Publish to NPM
-        needs: [ build_and_test ]
+        needs: [ test, build, lint ]
         runs-on: ubuntu-latest
         steps:
             -   uses: actions/checkout@v2
@@ -92,6 +92,6 @@ jobs:
                 run: |
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-                    npm run release -- --yes --no-verify-access
+                    npm run build && npx lerna version patch && npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:
                     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

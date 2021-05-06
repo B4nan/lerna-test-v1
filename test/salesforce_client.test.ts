@@ -4,7 +4,7 @@ import { URLSearchParams } from 'url';
 import _ from 'underscore';
 import nock from 'nock';
 
-import { SalesforceClient, cleanAndCompareWithSchema, MISSING_NAME_PLACEHOLDER } from '@apify/salesforce_client';
+import { SalesforceClient, cleanAndCompareWithSchema, MISSING_NAME_PLACEHOLDER } from '@lerna-test-v1/salesforce_client';
 
 const BASE_CONFIG = {
     tokenUrl: 'https://test.salesforce.com/services/oauth2/token',

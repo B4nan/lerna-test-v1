@@ -1,5 +1,5 @@
 import Ajv from 'ajv';
-import { validateInputSchema } from '@apify/input_schema';
+import { validateInputSchema } from '@lerna-test-v1/input_schema';
 
 describe('input_schema.json', () => {
     const validator = new Ajv();

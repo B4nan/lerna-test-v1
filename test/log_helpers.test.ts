@@ -1,5 +1,5 @@
-import { limitDepth, getLevelFromEnv, LogLevel } from '@apify/log';
-import { ENV_VARS } from '@apify/consts';
+import { limitDepth, getLevelFromEnv, LogLevel } from '@lerna-test-v1/log';
+import { ENV_VARS } from '@lerna-test-v1/consts';
 
 describe('getLevelFromEnv()', () => {
     it('should support integers', () => {

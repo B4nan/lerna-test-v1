@@ -1,5 +1,5 @@
 import stripAnsi from 'strip-ansi';
-import { LoggerText, LogLevel, PREFIX_DELIMITER } from '@apify/log';
+import { LoggerText, LogLevel, PREFIX_DELIMITER } from '@lerna-test-v1/log';
 
 const CONSOLE_METHODS = ['log', 'warn', 'error', 'debug'];
 const DATE_REGEX = '\\d\\d\\d\\d-\\d\\d-\\d\\d \\d\\d:\\d\\d:\\d\\d\\.\\d\\d\\d';

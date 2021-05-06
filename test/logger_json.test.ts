@@ -1,4 +1,4 @@
-import { LoggerJson, LogLevel, PREFIX_DELIMITER } from '@apify/log';
+import { LoggerJson, LogLevel, PREFIX_DELIMITER } from '@lerna-test-v1/log';
 
 const CONSOLE_METHODS = ['log', 'warn', 'error', 'debug'];
 const DATE_REGEX = /\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ/;

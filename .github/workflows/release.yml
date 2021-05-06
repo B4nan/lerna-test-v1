@@ -30,15 +30,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       -
-        name: Cache Node Modules
-        if: ${{ matrix.node-version == 14 }}
-        uses: actions/cache@v2
-        with:
-          path: |
-            node_modules
-            build
-          key: cache-${{ github.run_id }}-v14
-      -
           name: Upgrade NPM to have workspaces support
           run: npm i -G npm@latest
       -
@@ -88,31 +79,11 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org/
       -
-        name: Load Cache
+        name: Cache node_modules
         uses: actions/cache@v2
         with:
-          path: |
-            node_modules
-            build
-          key: cache-${{ github.run_id }}-v14
+          path: '**/node_modules'
+          key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
       -
-        # Determine if this is a beta or latest release
-        name: Set Release Tag
-        run: echo "RELEASE_TAG=$(if [ ${{ github.event_name }} = release ]; then echo latest; else echo beta; fi)" >> $GITHUB_ENV
-      -
-        # Check version consistency and increment pre-release version number for beta only.
-        name: Bump pre-release version
-        if: env.RELEASE_TAG == 'beta'
-        run: node ./.github/scripts/before-beta-release.js
-      -
-        name: Publish to NPM
-        # Hotfix copying of built files to top level (this code is from old publish file). We need a better way.
-        run: cp package.json .npmignore README.md LICENSE build/ && cd build && ls && npm i && NODE_AUTH_TOKEN=${{secrets.NPM_TOKEN}} npm publish --tag ${{ env.RELEASE_TAG }}
-      -
-        # Latest version is tagged by the release process so we only tag beta here.
-        name: Tag Version
-        if: env.RELEASE_TAG == 'beta'
-        run: |
-          git_tag=v`node -p "require('./package.json').version"`
-          git tag $git_tag
-          git push origin $git_tag
+        name: Release
+        run: npm run release

@@ -1,5 +1,5 @@
-import * as REGEXS from '@apify/consts';
-import { SPLIT_PATH_REGEX } from '@apify/consts';
+import * as REGEXS from '@lerna-test-v1/consts';
+import { SPLIT_PATH_REGEX } from '@lerna-test-v1/consts';
 
 const tests = {
     GIT_REPO_REGEX: {

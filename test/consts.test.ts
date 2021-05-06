@@ -1,4 +1,4 @@
-import { USERNAME } from '@apify/consts';
+import { USERNAME } from '@lerna-test-v1/consts';
 
 describe('consts', () => {
     describe('USERNAME', () => {

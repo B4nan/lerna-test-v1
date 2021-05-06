@@ -1,4 +1,4 @@
-import { LinkedList } from '@apify/datastructures';
+import { LinkedList } from '@lerna-test-v1/datastructures';
 
 // asserts that linked list is equivalent to an array
 const assertSame = function (list: LinkedList, array: any[]) {

@@ -1,4 +1,4 @@
-import { convertRelativeImagePathsToAbsoluteInReadme } from '@apify/git';
+import { convertRelativeImagePathsToAbsoluteInReadme } from '@lerna-test-v1/git';
 
 describe('convertRelativeImagePathsToAbsoluteInReadme()', () => {
     it('works correctly for all forms of relative paths', () => {

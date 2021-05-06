@@ -1,5 +1,5 @@
 import _ from 'underscore';
-import { ListDictionary } from '@apify/datastructures';
+import { ListDictionary } from '@lerna-test-v1/datastructures';
 
 // asserts that linked list is equivalent to an array of [{key: Object, value: Object}] objects
 const assertSame = function (ld: any, array: any) {

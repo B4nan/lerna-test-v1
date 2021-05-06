@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import _ from 'underscore';
-import { Log, LEVELS, Logger } from '@apify/log';
-import { ENV_VARS } from '@apify/consts';
+import { Log, LEVELS, Logger } from '@lerna-test-v1/log';
+import { ENV_VARS } from '@lerna-test-v1/consts';
 
 describe('log', () => {
     let loggerSpy: jest.SpyInstance;

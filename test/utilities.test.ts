@@ -1,6 +1,6 @@
 import _ from 'underscore';
 import * as http from 'http';
-import * as utils from '@apify/utilities';
+import * as utils from '@lerna-test-v1/utilities';
 
 describe('utilities', () => {
     describe('#cryptoRandomObjectId()', () => {

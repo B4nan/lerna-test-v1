@@ -1,5 +1,5 @@
 import marked, { Renderer } from 'marked';
-import { customHeadingRenderer, customLinkRenderer, customImageRenderer } from '@apify/markdown';
+import { customHeadingRenderer, customLinkRenderer, customImageRenderer } from '@lerna-test-v1/markdown';
 
 describe('apifyMarked custom renderers work', () => {
     const renderer = new Renderer();

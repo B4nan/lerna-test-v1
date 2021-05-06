@@ -16,7 +16,7 @@ import {
     traverseObject,
     unescapeFromBson,
     validateInputUsingValidator,
-} from '@apify/utilities';
+} from '@lerna-test-v1/utilities';
 
 const clone = function (obj: any) {
     return Array.isArray(obj) ? obj.slice(0) : brokenClone(obj);

@@ -1,5 +1,5 @@
-import { WebhookPayloadTemplate, InvalidJsonError, InvalidVariableError } from '@apify/utilities';
-import { WEBHOOK_DEFAULT_PAYLOAD_TEMPLATE, WEBHOOK_ALLOWED_PAYLOAD_VARIABLES } from '@apify/consts';
+import { WebhookPayloadTemplate, InvalidJsonError, InvalidVariableError } from '@lerna-test-v1/utilities';
+import { WEBHOOK_DEFAULT_PAYLOAD_TEMPLATE, WEBHOOK_ALLOWED_PAYLOAD_VARIABLES } from '@lerna-test-v1/consts';
 
 const validJson = `
 {

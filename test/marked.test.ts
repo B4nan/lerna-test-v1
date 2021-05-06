@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import { apifyMarked } from '@apify/markdown';
+import { apifyMarked } from '@lerna-test-v1/markdown';
 
 // This is here in order not to mess up indentation
 const MARKDOWN_UNDER_TEST = `

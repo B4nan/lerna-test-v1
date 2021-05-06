@@ -2,7 +2,7 @@
 import _ from 'underscore';
 import nock from 'nock';
 
-import { HubspotClient, cleanAndCompareWithSchema, MISSING_NAME_PLACEHOLDER } from '@apify/hubspot_client';
+import { HubspotClient, cleanAndCompareWithSchema, MISSING_NAME_PLACEHOLDER } from '@lerna-test-v1/hubspot_client';
 
 const HUBSPOT_URL = 'https://api.hubapi.com/crm/v3';
 

@@ -1,5 +1,5 @@
-import log, { Exception } from '@apify/log';
-import { retryWithExpBackoff, RetryableError } from '@apify/utilities';
+import log, { Exception } from '@lerna-test-v1/log';
+import { retryWithExpBackoff, RetryableError } from '@lerna-test-v1/utilities';
 
 describe('exponential_backoff', () => {
     it('should retry retryable error and return result', async () => {

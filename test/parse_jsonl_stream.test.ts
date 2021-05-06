@@ -1,4 +1,4 @@
-import { ParseJsonlStream } from '@apify/utilities';
+import { ParseJsonlStream } from '@lerna-test-v1/utilities';
 
 const OBJS = [
     { a: 123 },

@@ -1,4 +1,4 @@
-import { HealthChecker } from '@apify/utilities';
+import { HealthChecker } from '@lerna-test-v1/utilities';
 
 describe('HealthChecker', () => {
     const mongoDbWriteTestCollection = 'some-collection';

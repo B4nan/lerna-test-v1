@@ -78,10 +78,6 @@ jobs:
         needs: [ test, build, lint ]
         runs-on: ubuntu-latest
         steps:
-            -   name: Configure git credentials
-                uses: OleksiyRudenko/gha-git-credentials@v1
-                with:
-                    token: ${{ secrets.GH_TOKEN }}
             -   uses: actions/checkout@v2
             -   uses: actions/setup-node@v1
                 with:
@@ -92,6 +88,10 @@ jobs:
                 with:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
+            -   name: Configure git credentials
+                uses: OleksiyRudenko/gha-git-credentials@v1
+                with:
+                    token: ${{ secrets.GH_TOKEN }}
             -   name: Release
                 run: |
                     echo "access=public" >> .npmrc

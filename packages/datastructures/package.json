@@ -1,6 +1,6 @@
 {
     "name": "@lerna-test-v1/datastructures",
-    "version": "0.7.8",
+    "version": "1.0.1",
     "description": "Tools and constants shared across Apify projects.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",

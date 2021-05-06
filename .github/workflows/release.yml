@@ -98,6 +98,7 @@ jobs:
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
                     npm install
                     npm run build
+                    git checkout -- .
                     npx lerna version patch
                     npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:

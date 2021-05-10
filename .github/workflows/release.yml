@@ -94,6 +94,8 @@ jobs:
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
                     npm install
+                    git status
+                    git diff
                     npm run build
                     git status
                     git diff

@@ -1,6 +1,6 @@
 {
     "name": "@lerna-test-v1/hubspot_client",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "description": "Tools and constants shared across Apify projects.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.8 (2021-05-10)
+
+
+### Bug Fixes
+
+* make a change in git package ([c865a32](https://github.com/apify/apify-shared-js/commit/c865a32fca2e1b641eea20785a770134d48234b1))
+
+
+
+
+
 ## 1.0.7 (2021-05-06)
 
 

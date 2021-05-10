@@ -103,10 +103,23 @@ jobs:
                     git status
                     git diff
                     git stash save
-                    npx lerna version patch --yes
+                    git status
+                    git diff
+                    echo 'stashed'
+                    npx lerna version patch --yes --no-push
+                    echo 'versioned'
+                    git status
+                    git diff
                     git stash pop
+                    echo 'unstashed'
+                    git status
+                    git diff
                     git commit --amend --no-edit
+                    echo 'amended'
+                    git push
+                    echo 'pushed'
                     npx lerna publish from-package --contents dist --yes --no-verify-access
+                    echo 'published'
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
                     GIT_USER: "noreply@apify.com:${{ secrets.GH_TOKEN }}"

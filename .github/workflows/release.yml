@@ -99,29 +99,30 @@ jobs:
                     git config --global user.email 'noreply@apify.com'
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-                    npm install
-                    git status
-                    git diff
-                    npm run build
-                    git status
-                    git diff
-                    git stash save
-                    git status
-                    git diff
-                    echo 'stashed'
-                    npx lerna version patch --yes --no-push
-                    echo 'versioned'
-                    git status
-                    git diff
-                    git stash pop
-                    echo 'unstashed'
-                    git status
-                    git diff
-                    git commit -a --amend --no-edit
-                    echo 'amended'
-                    git push --follow-tags
-                    echo 'pushed'
-                    npx lerna publish from-package --contents dist --yes --no-verify-access
+#                    npm install
+#                    git status
+#                    git diff
+#                    npm run build
+#                    git status
+#                    git diff
+#                    git stash save
+#                    git status
+#                    git diff
+#                    echo 'stashed'
+#                    npx lerna version patch --yes --no-push
+#                    echo 'versioned'
+#                    git status
+#                    git diff
+#                    git stash pop
+#                    echo 'unstashed'
+#                    git status
+#                    git diff
+#                    git commit -a --amend --no-edit
+#                    echo 'amended'
+#                    git push --follow-tags
+#                    echo 'pushed'
+#                    npx lerna publish from-package --contents dist --yes --no-verify-access
+                    npx lerna publish --contents dist --yes --no-verify-access
                     echo 'published'
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

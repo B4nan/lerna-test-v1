@@ -101,7 +101,18 @@ jobs:
                     git config --global user.email 'noreply@apify.com'
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+                    echo 'check 1'
+                    git status
+                    git diff
+                    npm install
+                    echo 'check 2'
+                    git status
+                    git diff
+                    git commit -am 'chore: update lock file'
                     npx lerna publish --contents dist --yes --no-verify-access
+                    echo 'check 3'
+                    git status
+                    git diff
                     echo 'published'
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

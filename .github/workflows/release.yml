@@ -32,9 +32,9 @@ jobs:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
             -   name: Update NPM
-                run: npm install -g npm@7.11.2 gen-esm-wrapper
+                run: npm install --no-audit -g npm@7.11.2 gen-esm-wrapper
             -   name: Install Dependencies
-                run: npm install
+                run: npm install --no-audit
             -   name: Run Tests
                 run: npm test
 
@@ -54,9 +54,9 @@ jobs:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
             -   name: Update NPM
-                run: npm install -g npm@7.11.2 gen-esm-wrapper
+                run: npm install --no-audit -g npm@7.11.2 gen-esm-wrapper
             -   name: Install Dependencies
-                run: npm install
+                run: npm install --no-audit
             -   run: npm run build
 
     lint:
@@ -75,7 +75,7 @@ jobs:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
             -   name: Install Dependencies
-                run: npm install
+                run: npm install --no-audit
             -   run: npm run lint
 
     deploy:
@@ -104,7 +104,8 @@ jobs:
                     echo 'check 1'
                     git status
                     git diff
-                    npm install
+                    npm install --no-audit
+                    npm run build
                     echo 'check 2'
                     git status
                     git diff
@@ -114,7 +115,7 @@ jobs:
                     echo 'check 3'
                     git status
                     git diff
-                    npm install # reinstall to have updated lock file
+                    npm install --no-audit # reinstall to have updated lock file
                     echo 'check 3'
                     git status
                     git diff

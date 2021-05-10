@@ -108,13 +108,17 @@ jobs:
                     echo 'check 2'
                     git status
                     git diff
-                    git commit -am 'chore: update lock file'
-                    git push
                     npx lerna publish --contents dist --yes --no-verify-access
+                    echo 'published'
                     echo 'check 3'
                     git status
                     git diff
-                    echo 'published'
+                    npm install # reinstall to have updated lock file
+                    echo 'check 3'
+                    git status
+                    git diff
+                    git commit -am 'chore: update lock file'
+                    git push
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
                     GIT_USER: "noreply@apify.com:${{ secrets.GH_TOKEN }}"

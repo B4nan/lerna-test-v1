@@ -102,8 +102,10 @@ jobs:
                     npm run build
                     git status
                     git diff
-                    git checkout -- .
+                    git stash save
                     npx lerna version patch --yes
+                    git stash pop
+                    git commit --amend --no-edit
                     npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

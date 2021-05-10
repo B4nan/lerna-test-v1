@@ -15,7 +15,7 @@ jobs:
             fail-fast: false
             matrix:
                 node-version: [ 14, 16 ]
-#                node-version: [ 12, 14, 15, 16 ]
+        #                node-version: [ 12, 14, 15, 16 ]
 
         steps:
             -   uses: actions/checkout@v2
@@ -94,26 +94,21 @@ jobs:
                 with:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
+            -   name: Check for changes
+                id: changed_packages
+                run: |
+                    echo "::set-output name=changed_packages::$(npx lerna changed -p | wc -l | xargs)"
             -   name: Release
+                if: steps.changed_packages.outputs.changed_packages != '0'
                 run: |
                     git config --global user.name 'Apify Release Bot'
                     git config --global user.email 'noreply@apify.com'
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-                    echo 'check 1'
-                    git status
-                    git diff
                     npm install --no-audit
                     npm run build
-                    echo 'check 2'
-                    git status
-                    git diff
                     git checkout -- .
                     npx lerna publish --contents dist --yes --no-verify-access
-                    echo 'published'
-                    echo 'check 3'
-                    git status
-                    git diff
                     npm install --no-audit # reinstall to have updated lock file
                     echo 'check 3'
                     git status

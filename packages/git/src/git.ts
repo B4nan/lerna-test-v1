@@ -9,6 +9,8 @@ interface ConvertOptions {
     gitBranchName?: string;
 }
 
+// do sth
+
 /**
  * This replaces all relative image paths in markdown readme
  * by appropriate absolute paths so they can be correctly rendered on the website.

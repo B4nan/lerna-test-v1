@@ -30,8 +30,8 @@ jobs:
                 with:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
-            -   name: Update NPM
-                run: npm install -G npm@latest
+#            -   name: Update NPM
+#                run: npm install -G npm@latest
             -   name: Install Dependencies
                 run: npm install
             -   name: Run Tests

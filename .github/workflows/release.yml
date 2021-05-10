@@ -116,7 +116,7 @@ jobs:
                     git diff
                     git commit -a --amend --no-edit
                     echo 'amended'
-                    git push
+                    git push --follow-tags
                     echo 'pushed'
                     npx lerna publish from-package --contents dist --yes --no-verify-access
                     echo 'published'

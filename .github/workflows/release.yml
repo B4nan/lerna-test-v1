@@ -110,7 +110,7 @@ jobs:
                     git status
                     git diff
                     git checkout -- .
-                    npx lerna publish --contents dist --yes --no-verify-access
+                    npx lerna publish --contents dist --yes
                     echo 'published'
                     echo 'check 3'
                     git status
@@ -119,7 +119,7 @@ jobs:
                     echo 'check 3'
                     git status
                     git diff
-                    git commit -am 'chore: update lock file'
+                    git commit -am 'chore: update lock file [skip ci]'
                     git push
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

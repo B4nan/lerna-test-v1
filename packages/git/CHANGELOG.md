@@ -3,6 +3,79 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.28](https://github.com/apify/apify-shared-js/compare/@lerna-test-v1/git@1.0.8...@lerna-test-v1/git@1.0.28) (2021-05-10)
+
+
+### Bug Fixes
+
+* make a breaking change in git ([4e7305f](https://github.com/apify/apify-shared-js/commit/4e7305f148ce658262c10481ed700c38c16f5d78))
+
+
+
+## 1.0.27 (2021-05-10)
+
+
+
+## 1.0.26 (2021-05-10)
+
+
+
+## 1.0.25 (2021-05-10)
+
+
+
+## 1.0.24 (2021-05-10)
+
+
+
+## 1.0.23 (2021-05-10)
+
+
+
+## 1.0.22 (2021-05-10)
+
+
+
+## 1.0.21 (2021-05-10)
+
+
+
+## 1.0.20 (2021-05-10)
+
+
+
+## 1.0.19 (2021-05-10)
+
+
+
+## 1.0.12 (2021-05-10)
+
+
+
+## 1.0.11 (2021-05-10)
+
+
+
+## 1.0.10 (2021-05-10)
+
+
+### Bug Fixes
+
+* make another change in git package 2 ([b465f1c](https://github.com/apify/apify-shared-js/commit/b465f1c490a3e3cb295472871289bbae79f008cc))
+
+
+
+## 1.0.9 (2021-05-10)
+
+
+### Bug Fixes
+
+* make another change in git package ([0fc980c](https://github.com/apify/apify-shared-js/commit/0fc980c5f4a15053d40ef1662add30a04d4bb290))
+
+
+
+
+
 ## 1.0.27 (2021-05-10)
 
 **Note:** Version bump only for package @lerna-test-v1/git

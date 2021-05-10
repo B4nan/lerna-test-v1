@@ -102,6 +102,7 @@ jobs:
                     npm run build
                     git status
                     git diff
+                    git checkout -- .
                     npx lerna version patch --yes
                     npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:

@@ -53,6 +53,8 @@ jobs:
                 with:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
+            -   name: Update NPM
+                run: npm install -g npm@7.11.2 gen-esm-wrapper
             -   name: Install Dependencies
                 run: npm install
             -   run: npm run build

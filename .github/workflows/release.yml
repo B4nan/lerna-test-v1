@@ -110,9 +110,7 @@ jobs:
                     git checkout -- .
                     npx lerna publish --contents dist --yes --no-verify-access
                     npm install --no-audit # reinstall to have updated lock file
-                    echo 'check 3'
-                    git status
-                    git diff
+                    npx conventional-changelog --preset angular --release-count 0 --outfile ./CHANGELOG.md --verbose # generate root changelog
                     git commit -am 'chore: update lock file [skip ci]'
                     git push
                 env:

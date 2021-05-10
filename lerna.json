@@ -8,7 +8,7 @@
             "conventionalCommits": true,
             "granularPathspec": false,
             "createRelease": "github",
-            "message": "chore(release): %s [skip ci]"
+            "message": "chore: release [skip ci]"
         }
     },
     "useWorkspaces": true,

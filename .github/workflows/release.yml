@@ -114,7 +114,7 @@ jobs:
                     echo 'unstashed'
                     git status
                     git diff
-                    git commit --amend --no-edit
+                    git commit -a --amend --no-edit
                     echo 'amended'
                     git push
                     echo 'pushed'

@@ -29,7 +29,7 @@ export const ACT_JOB_STATUSES = {
     READY: 'READY', // started but not allocated to any worker yet
     RUNNING: 'RUNNING', // running on worker
     SUCCEEDED: 'SUCCEEDED', // finished and all good
-    // FAILED: 'FAILED', // run or build failed
+    FAILED: 'FAILED', // run or build failed
     TIMING_OUT: 'TIMING-OUT', // timing out now
     TIMED_OUT: 'TIMED-OUT', // timed out
     ABORTING: 'ABORTING', // being aborted by user

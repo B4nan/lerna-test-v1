@@ -1,8 +1,9 @@
-# [1.0.0](https://github.com/apify/apify-shared-js/compare/v1.0.28...v0.0.0) (2021-05-10)
+## [1.0.1](https://github.com/apify/apify-shared-js/compare/v1.0.28...v1.0.1) (2021-05-10)
 
 
 ### Bug Fixes
 
+* consts bug fix update ([6ab238b](https://github.com/apify/apify-shared-js/commit/6ab238bba0632c8e82d19a64dc5f984558f86e01))
 * fix a bug in `consts` ([b5790db](https://github.com/apify/apify-shared-js/commit/b5790db0572c90402f4a206d7c866ffec1083255))
 * make a breaking change in git ([4e7305f](https://github.com/apify/apify-shared-js/commit/4e7305f148ce658262c10481ed700c38c16f5d78))
 * make a breaking change in git 2 ([c2b459b](https://github.com/apify/apify-shared-js/commit/c2b459b8b96fcc11b4db3db50ee6629438418ef4))
@@ -13,6 +14,8 @@
 
 * add something interesting to `consts` ([754fc05](https://github.com/apify/apify-shared-js/commit/754fc0523e3942be49f36470a31625b333b97ac2))
 * add something new to `consts` ([38a1d1b](https://github.com/apify/apify-shared-js/commit/38a1d1b18d1172d994b82ab3f11d1101e774a3f9))
+* do sth minor ([e56c38d](https://github.com/apify/apify-shared-js/commit/e56c38dc8f9913fb92ee6cfb85349342f20019d8))
+* do sth minor 2 ([381fef2](https://github.com/apify/apify-shared-js/commit/381fef204645d4b4e1a8da7259c4278cc98efcda))
 
 
 ### BREAKING CHANGES

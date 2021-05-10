@@ -108,6 +108,7 @@ jobs:
                     echo 'check 2'
                     git status
                     git diff
+                    git checkout -- .
                     npx lerna publish --contents dist --yes --no-verify-access
                     echo 'published'
                     echo 'check 3'

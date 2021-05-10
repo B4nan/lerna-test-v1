@@ -1,4 +1,4 @@
-# [0.0.0](https://github.com/apify/apify-shared-js/compare/v1.0.28...v0.0.0) (2021-05-10)
+# [1.0.0](https://github.com/apify/apify-shared-js/compare/v1.0.28...v0.0.0) (2021-05-10)
 
 
 ### Bug Fixes

@@ -18,6 +18,9 @@ jobs:
 
         steps:
             -   uses: actions/checkout@v2
+                with:
+                    fetch-depth: 0 # we need to pull everything to allow lerna to detect what packages changed
+                    ref: master
             -   name: Use Node.js ${{ matrix.node-version }}
                 uses: actions/setup-node@v1
                 with:

@@ -11,6 +11,7 @@
             "message": "chore(release): %s [skip ci]"
         }
     },
+    "useWorkspaces": true,
     "ignoreChanges": [
         "**/test/**",
         "**/*.md"

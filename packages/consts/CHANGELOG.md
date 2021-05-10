@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.29](https://github.com/apify/apify-shared-js/compare/@lerna-test-v1/consts@1.0.8...@lerna-test-v1/consts@1.0.29) (2021-05-10)
+
+
+### Bug Fixes
+
+* make a change in consts 1 ([8e47fbc](https://github.com/apify/apify-shared-js/commit/8e47fbc2d381db165dadcbbc58717157ef909f66))
+
+
+
+## 1.0.28 (2021-05-10)
+
+
+### Bug Fixes
+
+* make a change in `consts` ([25236d9](https://github.com/apify/apify-shared-js/commit/25236d92aced5f13290dc53068196d5908176753))
+
+
+
+## 1.0.27 (2021-05-10)
+
+
+
+## 1.0.26 (2021-05-10)
+
+
+
+## 1.0.25 (2021-05-10)
+
+
+
+## 1.0.24 (2021-05-10)
+
+
+
+## 1.0.23 (2021-05-10)
+
+
+
+## 1.0.22 (2021-05-10)
+
+
+
+## 1.0.21 (2021-05-10)
+
+
+
+## 1.0.20 (2021-05-10)
+
+
+
+## 1.0.19 (2021-05-10)
+
+
+
+## 1.0.12 (2021-05-10)
+
+
+
+## 1.0.11 (2021-05-10)
+
+
+
+## 1.0.10 (2021-05-10)
+
+
+
+## 1.0.9 (2021-05-10)
+
+
+
+
+
 ## [1.0.28](https://github.com/apify/apify-shared-js/compare/v1.0.27...v1.0.28) (2021-05-10)
 
 

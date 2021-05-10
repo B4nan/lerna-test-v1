@@ -6,7 +6,6 @@ on:
             - master
 
 jobs:
-    # NPM install is done in a separate job and cached to speed up the following jobs.
     test:
         name: Test
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
@@ -71,8 +70,6 @@ jobs:
                 run: npm install
             -   run: npm run lint
 
-    # The deploy job is long but there are only 2 important parts. NPM publish
-    # and triggering of docker image builds in the apify-actor-docker repo.
     deploy:
         name: Publish to NPM
         needs: [ test, build, lint ]
@@ -98,11 +95,13 @@ jobs:
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
                     npm install
                     npm run build
-                    git checkout -- .
+                    git status
+                    git diff
+#                    git checkout -- .
                     npx lerna version patch --yes
                     npx lerna publish from-package --contents dist --yes --no-verify-access
                 env:
-                    NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+                    NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
                     GIT_USER: "noreply@apify.com:${{ secrets.GH_TOKEN }}"
-                    GH_TOKEN: ${{secrets.GH_TOKEN}}
+                    GH_TOKEN: ${{ secrets.GH_TOKEN }}
                     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

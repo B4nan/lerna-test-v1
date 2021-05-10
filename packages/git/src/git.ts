@@ -9,7 +9,7 @@ interface ConvertOptions {
     gitBranchName?: string;
 }
 
-// do sth
+// do sth else
 
 /**
  * This replaces all relative image paths in markdown readme

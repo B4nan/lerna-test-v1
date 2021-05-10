@@ -12,6 +12,7 @@
 ### Features
 
 * add something interesting to `consts` ([754fc05](https://github.com/apify/apify-shared-js/commit/754fc0523e3942be49f36470a31625b333b97ac2))
+* add something new to `consts` ([38a1d1b](https://github.com/apify/apify-shared-js/commit/38a1d1b18d1172d994b82ab3f11d1101e774a3f9))
 
 
 ### BREAKING CHANGES

@@ -1,6 +1,6 @@
 {
     "name": "@lerna-test-v1/utilities",
-    "version": "1.0.34",
+    "version": "1.0.35",
     "description": "Tools and constants shared across Apify projects.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -43,9 +43,9 @@
         "access": "public"
     },
     "dependencies": {
-        "@lerna-test-v1/consts": "^2.0.0",
+        "@lerna-test-v1/consts": "^2.0.1",
         "@lerna-test-v1/input_schema": "^1.0.27",
-        "@lerna-test-v1/log": "^1.0.34",
+        "@lerna-test-v1/log": "^1.0.35",
         "ajv": "^6.12.6",
         "cherow": "^1.6.9",
         "countries-list": "^2.6.1",

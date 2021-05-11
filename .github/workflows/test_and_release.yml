@@ -25,7 +25,7 @@ jobs:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
             -   name: Update NPM
-                run: npm install --no-audit -g npm@7.11.2 gen-esm-wrapper
+                run: npm install --no-audit -g npm@latest
             -   name: Install Dependencies
                 run: npm install --no-audit
             -   name: Run Tests
@@ -47,7 +47,7 @@ jobs:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
             -   name: Update NPM
-                run: npm install --no-audit -g npm@7.11.2 gen-esm-wrapper
+                run: npm install --no-audit -g npm@latest
             -   name: Install Dependencies
                 run: npm install --no-audit
             -   run: npm run build

@@ -9,7 +9,11 @@ let data = '';
 function generateChangelog(packages: { name: string; version: string; location: string }[]) {
     let tpl = `# \`apify-shared\` monorepo
 
-\`apify-shared\` is now an independently versioned monorepo. See the changelogs of each package:
+\`apify-shared\` is now an independently versioned monorepo.
+
+> This file is generated.
+
+See the changelogs of each package:
 
 package | version | changelog
 --------|---------|----------

@@ -1,7 +1,7 @@
 {
     "name": "lerna-test-v1",
     "private": true,
-    "version": "1.0.4",
+    "version": "0.0.0",
     "description": "Tools and constants shared across Apify projects.",
     "main": "build/index.js",
     "types": "types/index.d.ts",

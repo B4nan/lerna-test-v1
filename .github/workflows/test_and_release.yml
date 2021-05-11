@@ -1,8 +1,6 @@
 name: Check & Release
 
-on:
-    push:
-    pull_request:
+on: [ push, pull_request ]
 
 jobs:
     test:
@@ -109,8 +107,6 @@ jobs:
                     git checkout -- .
                     npx lerna publish --contents dist --yes --no-verify-access
                     npm install --no-audit # reinstall to have updated lock file
-                    npx ts-node -T scripts/sync-root-version.ts
-                    npx conventional-changelog --preset angular --release-count 0 --outfile ./CHANGELOG.md --verbose # generate root changelog
                     git commit -am 'chore: update lock file [skip ci]'
                     git push
                 env:

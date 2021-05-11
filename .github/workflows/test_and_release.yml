@@ -107,7 +107,8 @@ jobs:
                     git checkout -- .
                     npx lerna publish --contents dist --yes --no-verify-access
                     npm install --no-audit # reinstall to have updated lock file
-                    git commit -am 'chore: update lock file [skip ci]'
+                    lerna ls --json | ts-node -T scripts/sync-root-changelog.ts
+                    git commit -am 'chore: update root lock file and changelog [skip ci]'
                     git push
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

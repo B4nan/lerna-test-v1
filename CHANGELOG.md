@@ -1,15 +1,15 @@
 # `apify-shared` monorepo
 
-Apify-shared is now an independently versioned monorepo. See the changelogs of each package:
+`apify-shared` is now an independently versioned monorepo. See the changelogs of each package:
 
-package | changelog
---------|----------
-`@apify/consts` | [CHANGELOG](./packages/consts/CHANGELOG.md)
-`@apify/datastructures` | [CHANGELOG](./packages/datastructures/CHANGELOG.md)
-`@apify/git` | [CHANGELOG](./packages/git/CHANGELOG.md)
-`@apify/hubspot_client` | [CHANGELOG](./packages/hubspot_client/CHANGELOG.md)
-`@apify/input_schema` | [CHANGELOG](./packages/input_schema/CHANGELOG.md)
-`@apify/log` | [CHANGELOG](./packages/log/CHANGELOG.md)
-`@apify/markdown` | [CHANGELOG](./packages/markdown/CHANGELOG.md)
-`@apify/salesforce_client` | [CHANGELOG](./packages/salesforce_client/CHANGELOG.md)
-`@apify/utilities` | [CHANGELOG](./packages/utilities/CHANGELOG.md)
+package | version | changelog
+--------|---------|----------
+`@lerna-test-v1/consts` | 1.3.0 | [CHANGELOG](./packages/consts/CHANGELOG.md)
+`@lerna-test-v1/datastructures` | 1.0.27 | [CHANGELOG](./packages/datastructures/CHANGELOG.md)
+`@lerna-test-v1/git` | 2.1.2 | [CHANGELOG](./packages/git/CHANGELOG.md)
+`@lerna-test-v1/hubspot_client` | 1.0.27 | [CHANGELOG](./packages/hubspot_client/CHANGELOG.md)
+`@lerna-test-v1/input_schema` | 1.0.27 | [CHANGELOG](./packages/input_schema/CHANGELOG.md)
+`@lerna-test-v1/log` | 1.0.33 | [CHANGELOG](./packages/log/CHANGELOG.md)
+`@lerna-test-v1/markdown` | 1.0.33 | [CHANGELOG](./packages/markdown/CHANGELOG.md)
+`@lerna-test-v1/salesforce_client` | 1.0.27 | [CHANGELOG](./packages/salesforce_client/CHANGELOG.md)
+`@lerna-test-v1/utilities` | 1.0.33 | [CHANGELOG](./packages/utilities/CHANGELOG.md)

@@ -30,8 +30,6 @@
     },
     "homepage": "https://apify.com",
     "scripts": {
-        "bootstrap": "lerna bootstrap",
-        "postinstall": "npm run bootstrap",
         "clean": "lerna run clean",
         "build": "lerna run build",
         "test": "jest --silent",

@@ -2,8 +2,7 @@ name: Check & Release
 
 on:
     push:
-        branches:
-            - master
+    pull_request:
 
 jobs:
     test:
@@ -14,8 +13,7 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                node-version: [ 14, 16 ]
-        #                node-version: [ 12, 14, 15, 16 ]
+                node-version: [ 12, 14, 15, 16 ]
 
         steps:
             -   uses: actions/checkout@v2
@@ -75,8 +73,9 @@ jobs:
                 run: npm install --no-audit
             -   run: npm run lint
 
-    deploy:
+    publish:
         name: Publish to NPM
+        if: github.ref == 'refs/heads/master'
         needs: [ test, build, lint ]
         runs-on: ubuntu-latest
         steps:

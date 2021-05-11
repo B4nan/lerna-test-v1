@@ -1,4 +1,4 @@
-## [1.0.1](https://github.com/apify/apify-shared-js/compare/v1.0.28...v1.0.1) (2021-05-10)
+## [1.0.2](https://github.com/apify/apify-shared-js/compare/v1.0.28...v1.0.2) (2021-05-11)
 
 
 ### Bug Fixes
@@ -8,6 +8,7 @@
 * make a breaking change in git ([4e7305f](https://github.com/apify/apify-shared-js/commit/4e7305f148ce658262c10481ed700c38c16f5d78))
 * make a breaking change in git 2 ([c2b459b](https://github.com/apify/apify-shared-js/commit/c2b459b8b96fcc11b4db3db50ee6629438418ef4))
 * make a change in consts 1 ([8e47fbc](https://github.com/apify/apify-shared-js/commit/8e47fbc2d381db165dadcbbc58717157ef909f66))
+* what a fix in git ([e2ee628](https://github.com/apify/apify-shared-js/commit/e2ee628dd00390ed9de40568cdc1c5a16f1774ec))
 
 
 ### Features

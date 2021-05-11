@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.36](https://github.com/apify/apify-shared-js/compare/@lerna-test-v1/log@1.0.35...@lerna-test-v1/log@1.0.36) (2021-05-11)
+
+**Note:** Version bump only for package @lerna-test-v1/log
+
+
+
+
+
 ## [1.0.35](https://github.com/apify/apify-shared-js/compare/@lerna-test-v1/log@1.0.34...@lerna-test-v1/log@1.0.35) (2021-05-11)
 
 **Note:** Version bump only for package @lerna-test-v1/log

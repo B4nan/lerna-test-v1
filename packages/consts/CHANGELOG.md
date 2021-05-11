@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/apify/apify-shared-js/compare/@lerna-test-v1/consts@1.2.1...@lerna-test-v1/consts@1.3.0) (2021-05-11)
+
+
+### Features
+
+* now sth in git that is a feature ([1ff1ad2](https://github.com/apify/apify-shared-js/commit/1ff1ad2f3b5785483b4f712e358b79cc46bd6d6b))
+
+
+
+
+
 ## [1.2.1](https://github.com/apify/apify-shared-js/compare/@lerna-test-v1/consts@1.2.0...@lerna-test-v1/consts@1.2.1) (2021-05-10)
 
 

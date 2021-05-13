@@ -39,27 +39,6 @@
         "lint": "eslint packages/*/src test",
         "lint:fix": "eslint packages/*/src test --fix"
     },
-    "jest": {
-        "testTimeout": 30000,
-        "preset": "ts-jest",
-        "testEnvironment": "node",
-        "collectCoverage": false,
-        "collectCoverageFrom": [
-            "<rootDir>/packages/*/src/**/*.ts"
-        ],
-        "moduleNameMapper": {
-            "@lerna-test-v1/(.*)": "<rootDir>/packages/$1/src"
-        },
-        "modulePathIgnorePatterns": [
-            "dist/package.json",
-            "<rootDir>/package.json"
-        ],
-        "globals": {
-            "ts-jest": {
-                "tsconfig": "test/tsconfig.json"
-            }
-        }
-    },
     "devDependencies": {
         "@apify/eslint-config": "^0.1.4",
         "@apify/eslint-config-ts": "^0.1.1",

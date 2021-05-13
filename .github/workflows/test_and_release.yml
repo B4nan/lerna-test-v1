@@ -115,6 +115,6 @@ jobs:
                     git push
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-                    GIT_USER: "noreply@apify.com:${{ secrets.GITHUB_TOKEN }}"
+                    GIT_USER: "noreply@apify.com:${{ secrets.GH_TOKEN }}"
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

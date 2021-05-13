@@ -59,6 +59,7 @@ export const META_ORIGINS = {
     API: 'API', // Job started through API
     SCHEDULER: 'SCHEDULER', // Job started through Scheduler
     TEST: 'TEST', // Job started through test actor page
+    TEST2: 'TEST2',
 };
 
 /**

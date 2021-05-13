@@ -31,7 +31,7 @@ jobs:
             -   name: Update NPM
                 run: npm install --no-audit -g npm@latest
             -   name: Install Dependencies
-                run: npm install --no-audit
+                run: npm ci --no-audit
             -   name: Run Tests
                 run: npm test
 
@@ -53,7 +53,7 @@ jobs:
             -   name: Update NPM
                 run: npm install --no-audit -g npm@latest
             -   name: Install Dependencies
-                run: npm install --no-audit
+                run: npm ci --no-audit
             -   run: npm run build
 
     lint:
@@ -72,7 +72,7 @@ jobs:
                     path: '**/node_modules'
                     key: ${{ runner.os }}-${{ matrix.node-version }}-modules-${{ hashFiles('**/package-lock.json') }}
             -   name: Install Dependencies
-                run: npm install --no-audit
+                run: npm ci --no-audit
             -   run: npm run lint
 
     publish:
@@ -106,11 +106,11 @@ jobs:
                     git config --global user.email 'noreply@apify.com'
                     echo "access=public" >> .npmrc
                     echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-                    npm install --no-audit
+                    npm ci --no-audit
                     npm run build
                     git checkout -- .
                     npx lerna publish --contents dist --yes --no-verify-access
-                    npm install --no-audit # reinstall to have updated lock file
+                    npm ci --no-audit # reinstall to have updated lock file
                     npx lerna ls --json | npx ts-node -T scripts/sync-root-changelog.ts
                     git commit -am 'chore: update root lock file and changelog [skip ci]'
                     git push

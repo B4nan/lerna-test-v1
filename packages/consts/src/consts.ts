@@ -60,6 +60,7 @@ export const META_ORIGINS = {
     SCHEDULER: 'SCHEDULER', // Job started through Scheduler
     TEST: 'TEST', // Job started through test actor page
     TEST2: 'TEST2',
+    TEST3: 'TEST3',
 };
 
 /**

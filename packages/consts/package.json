@@ -1,6 +1,6 @@
 {
     "name": "@lerna-test-v1/consts",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "description": "Tools and constants shared across Apify projects.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",

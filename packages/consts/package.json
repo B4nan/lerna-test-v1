@@ -43,6 +43,6 @@
         "access": "public"
     },
     "devDependencies": {
-        "gen-esm-wrapper": "^1.1.1"
+        "gen-esm-wrapper": "1.1.1"
     }
 }

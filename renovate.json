@@ -1,6 +1,7 @@
 {
     "extends": ["config:base"],
     "pinVersions": false,
+    "prHourlyLimit": 100,
     "separateMajorMinor": false,
     "semanticCommits": "enabled",
     "packageRules": [

@@ -41,7 +41,7 @@
     },
     "devDependencies": {
         "@apify/eslint-config": "0.1.4",
-        "@apify/eslint-config-ts": "0.1.1",
+        "@apify/eslint-config-ts": "0.1.2",
         "@types/git-url-parse": "9.0.1",
         "@types/jest": "^26.0.13",
         "@types/marked": "2.0.4",

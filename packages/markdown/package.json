@@ -46,7 +46,7 @@
         "@lerna-test-v1/consts": "^2.1.2",
         "@lerna-test-v1/utilities": "^1.0.39",
         "git-url-parse": "^11.4.4",
-        "marked": "^2.0.0",
+        "marked": "^3.0.0",
         "match-all": "^1.2.6"
     }
 }
